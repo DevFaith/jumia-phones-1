@@ -1,5 +1,9 @@
 <?php
 
-$phones = 'Soon to show phones';
+$database = require 'bootstrap.php';
 
-require('assets/views/index.view.php');
+require 'src/entity/Customer.php';
+
+$customers = $database->selectAll('customer', Customer::class);
+
+require 'assets/views/index.view.php';
