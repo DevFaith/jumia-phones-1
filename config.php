@@ -2,6 +2,6 @@
 
 return [
     'database' => [
-        'connection' => 'sqlite:assets/databases/sample.db'
+        'connection' => 'sqlite:../assets/databases/sample.db'
     ]
 ];
