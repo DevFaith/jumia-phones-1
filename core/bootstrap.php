@@ -1,9 +1,11 @@
 <?php
 
-$app = [];
+use App\Core\App;
+use App\Core\Helpers\Connection;
+use App\Core\Helpers\QueryBuilder;
 
-$app['config'] = require '../config.php';
+App::bind('config', require '../config.php');
 
-$app['database'] = new QueryBuilder(
-    Connection::make($app['config']['database'])
-);
+App::bind('database', new QueryBuilder(
+    Connection::make(App::get('config')['database'])
+));

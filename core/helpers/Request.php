@@ -1,5 +1,7 @@
 <?php
 
+namespace App\Core\Helpers;
+
 class Request
 {
     public static function uri()
