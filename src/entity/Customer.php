@@ -4,9 +4,18 @@ namespace App\Entity;
 
 class Customer
 { 
-    public $id;
-    
-    public $name;
+    private $phone;
 
-    public $phone;
+
+    public function setPhone($phone)
+    {
+        $this->phone = $phone;
+
+        return $this;
+    }
+
+    public function getPhone()
+    {
+        return $this->phone;
+    }
 }

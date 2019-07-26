@@ -18,10 +18,12 @@ class Parser
     {
         foreach ($data as $key => $value)
         {
+            $phoneArray = explode(' ', $value);
+
             $parsed[$key]['country'] = $this->country($value);
             $parsed[$key]['state'] = $this->state($value);
             $parsed[$key]['code'] = $this->code($value);
-            $parsed[$key]['number'] = end(explode(' ', $value));
+            $parsed[$key]['number'] = end($phoneArray);
         }
 
         return $parsed;
