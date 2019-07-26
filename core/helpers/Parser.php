@@ -43,14 +43,14 @@ class Parser
 
     protected function state($value)
     {
-        $valid = false;
+        $valid = "false";
 
         foreach ($this->validators as $key => $validator)
         {
             preg_match('/' . $validator['regex'] . '/', $value, $matches);
             
             if (sizeof($matches) > 0) {
-                $valid = true;
+                $valid = "true";
             }
         }
 

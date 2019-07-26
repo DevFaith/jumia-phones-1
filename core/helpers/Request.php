@@ -16,6 +16,6 @@ class Request
 
     public static function all()
     {
-        return $_GET;
+        return array_filter($_GET);
     }
 }
