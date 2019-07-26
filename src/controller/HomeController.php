@@ -3,7 +3,8 @@
 namespace App\Controller;
 
 use App\Core\App;
-use App\Core\Helpers\{Controller, Parser, Request};
+use App\Core\Helpers\{Controller, Request};
+use App\Libs\Parser;
 use App\Repository\CustomerRepository;
 
 class HomeController extends Controller
