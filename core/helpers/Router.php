@@ -29,7 +29,7 @@ class Router
             return $this->callAction(...explode('@', $this->routes[$requestType][$uri]));
         }
 
-        throw new Exception('No route found.');
+        throw new \Exception('No route found.');
     }
 
     protected function callAction($controller, $action)
@@ -38,7 +38,7 @@ class Router
         $controller = new $controller;
 
         if (! method_exists($controller, $action)) {
-            throw new Exception("{$controller} does not respond to {$action} action.");
+            throw new \Exception("{$controller} does not respond to {$action} action.");
         }
 
         return $controller->$action();

@@ -6,16 +6,26 @@ class QueryBuilder
 {
     protected $pdo;
 
+    protected $table;
+
+
     public function __construct(\PDO $pdo)
     {
         $this->pdo = $pdo;
     }
 
-    public function selectAll($table, $intoClass)
+    public function from($table)
     {
-        $stmt = $this->pdo->prepare("SELECT * FROM {$table}");
-        $stmt->execute();
+        $this->table = $table;
 
-        return $stmt->fetchAll(\PDO::FETCH_CLASS, $intoClass);
+        return $this;
+    }
+
+    public function findBy($attribute)
+    {
+        $statement = $this->pdo->prepare("SELECT {$attribute} FROM {$this->table}");
+        $statement->execute();
+
+        return $statement->fetchAll(\PDO::FETCH_COLUMN);
     }
 }

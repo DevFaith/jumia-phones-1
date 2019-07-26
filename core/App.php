@@ -15,7 +15,7 @@ class App
     {
         if (! array_key_exists($key, static::$bindings)) {
             
-            throw new Exception("No {$key} bound in the container");
+            throw new \Exception("No {$key} bound in the container");
         }
         
         return static::$bindings[$key];

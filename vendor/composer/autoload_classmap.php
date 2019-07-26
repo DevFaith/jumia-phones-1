@@ -10,6 +10,7 @@ return array(
     'App\\Core\\App' => $baseDir . '/core/App.php',
     'App\\Core\\Helpers\\Connection' => $baseDir . '/core/helpers/Connection.php',
     'App\\Core\\Helpers\\Controller' => $baseDir . '/core/helpers/Controller.php',
+    'App\\Core\\Helpers\\Parser' => $baseDir . '/core/helpers/Parser.php',
     'App\\Core\\Helpers\\QueryBuilder' => $baseDir . '/core/helpers/QueryBuilder.php',
     'App\\Core\\Helpers\\Request' => $baseDir . '/core/helpers/Request.php',
     'App\\Core\\Helpers\\Router' => $baseDir . '/core/helpers/Router.php',
