@@ -1,5 +1,5 @@
 var Phone1 = {
-    Image: "/images/pexels-mohi-syed-454699.jpg",
+    Image: "/images/phone4.jpg",
     iphone: "image",
     name: "iphone SE",
     discountedPrice: "Ksh" + " " + 30000,
@@ -12,7 +12,7 @@ var Phone1 = {
   document.getElementById("originalPrice1").innerText = Phone1.originalPrice;
   
   var Phone2 = {
-    Image: "/images/pexels-mohi-syed-47261.jpg",
+    Image: "/images/phone3.jpg",
     iphone: "image2",
     name: "Iphone 10",
     discountedPrice: "Ksh" + " " + 55000,
@@ -25,7 +25,7 @@ var Phone1 = {
   document.getElementById("originalPrice2").innerText = Phone2.originalPrice;
   
   var Phone3 = {
-    Image: "/images/pexels-mateusz-dach-1294886.jpg",
+    Image: "/images/phone2.jpg",
     iphone: "image3",
     name: "Iphone 11",
     discountedPrice: "Ksh" + " " + 60000,
@@ -38,7 +38,7 @@ var Phone1 = {
   document.getElementById("originalPrice3").innerText = Phone3.originalPrice;
   
   var Phone4 = {
-    Image: "/images/pexels-essow-k-1042143.jpg",
+    Image: "/images/phone1.jpg",
     iphone: "image4",
     name: "Iphone 12",
     discountedPrice: "Ksh" + " " + 70000,
