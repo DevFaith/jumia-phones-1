@@ -1,0 +1,36 @@
+body {
+    background-color: grey;
+}
+
+#phone1,
+#phone2,
+#phone3,
+#phone4 {
+    flex: 1;
+    flex-direction: column;
+    background-color: white;
+    text-align: center;
+    justify-content: space-evenly;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#image,
+#image2,
+#image3,
+#image4 {
+    width: 90%;
+    height: 40%;
+    object-fit: scale-down;
+}
+
+
+#originalPrice1,
+#originalPrice2,
+#originalPrice3,
+#originalPrice4 {
+    text-decoration: line-through;
+
+}
